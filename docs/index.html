@@ -361,11 +361,17 @@ New Products
 							success: function(result){
 								var html = `<ul class="thumbnails">`;
 								for(var i = 0; i <result.length; i++){
+
+									
+									var a = `${result[i].image}`;
+									var b = a.substring(1,a.length);
+									console.log(b);
+
 									html += `<li class="span4">
 												<div class="thumbnail">
 													<a class="zoomTool" href="product_details.html" title="add to cart" ><span
 															class="icon-search"></span> QUICK VIEW</a>
-													<a href="product_details.html"><img src="..${result[i].image}" alt=""></a>
+													<a href="product_details.html"><img src="${b}" alt=""></a>
 													<div class="caption">
 														<h5>${result[i].title}</h5>
 														<h4>
@@ -378,7 +384,7 @@ New Products
 													</div>
 												</div>
 											</li>`;
-											console.log(`..${result[i].image}`);
+											
 								}
 								html += `</ul>`;
 								$('#featured-products').html(html);
@@ -487,8 +493,7 @@ Footer
 		</div>
 	</div>
 	<a href="#" class="gotop"><i class="icon-double-angle-up"></i></a>
-	<a href="product_details.html"><img src="../uploads/1.png" alt="">ádas</a>
-	<a href="product_details.html"><img src="./uploads/1.png" alt="">ádas</a>
+	
 	<!-- Placed at the end of the document so the pages load faster -->
 	<script src="assets/js/jquery.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
