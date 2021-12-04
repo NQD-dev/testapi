@@ -1,1 +1,1 @@
-var urlIpHost = "duongnguyen.pythonanywhere.com/"
+var urlIpHost = "https://duongnguyen.pythonanywhere.com/"
