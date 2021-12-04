@@ -1,0 +1,1 @@
+var urlIpHost = "duongnguyen.pythonanywhere.com/"
